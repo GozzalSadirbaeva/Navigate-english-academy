@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* scroll-behavior: smooth; */
+}
+body {
+  font-family: "Tilda";
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: "Tilda";
+  src: url("/public/fonts/TildaSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tilda";
+  src: url("/public/fonts/TildaSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tilda";
+  src: url("/public/fonts/TildaSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tilda";
+  src: url("/public/fonts/TildaSans-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tilda";
+  src: url("/public/fonts/TildaSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tilda";
+  src: url("/public/fonts/TildaSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tilda";
+  src: url("/public/fonts/TildaSans-Bold.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+.nav-text {
+  font-family: "Tilda";
+  src: url("/public/fonts/TildaSans-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-size: 19px;
+  line-height: 23px;
+}
+.nav-phone {
+  font-family: "Tilda";
+  src: url("/public/fonts/TildaSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-size: 19px;
+  line-height: 23px;
+}
+.footer-text {
+  font-family: "Tilda";
+  src: url("/public/fonts/TildaSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 26px;
+}
+.bg-img {
+  background-image: url(/public/bg-img.png);
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.bg-img2 {
+  background-image: url(/public/bg2.png);
+  background-repeat: no-repeat;
+  
+}
+.bg-blur {
+  backdrop-filter: blur(7.699999809265137px);
+}
+.bg-bookmark {
+  background: linear-gradient(199.45deg, #ff7ddf 6.52%, #c00ed0 203.1%);
+}
+.bg-comment{
+  background: linear-gradient(199.45deg, #65E959 6.52%, #16B885 203.1%);
+
+}
+.bg-star{
+  background: linear-gradient(199.45deg, #2B87FF 6.52%, rgba(70, 88, 206, 0.83) 203.1%);
+
+}
+.bg-volume{
+  background: linear-gradient(199.45deg, #FB8E66 6.52%, rgba(184, 15, 15, 0.83) 203.1%);
+
+}
