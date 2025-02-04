@@ -2,7 +2,7 @@ import React, { memo } from "react";
 
 const Galery = () => {
   return (
-    <div>
+    <div className="md:px-8 px-4">
       <div className="pb-[90px]">
         <h2 className="font-extrabold text-[49px] leading-[59px] text-center pb-5 pt-[65px]">
           Галерея

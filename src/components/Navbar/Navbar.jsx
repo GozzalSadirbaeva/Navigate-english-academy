@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  
   return (
     <div className="bg-[#BE1942]">
       <div className="container px-4 md:px-8 flex justify-between items-center py-3">
@@ -22,7 +23,7 @@ const Navbar = () => {
             <NavLink to="/about" className="nav-text">
               О Нас
             </NavLink>
-            <NavLink to="/" className="nav-text">
+            <NavLink to="/#teachers" className="nav-text">
               Учителя
             </NavLink>
             <NavLink to="/" className="nav-text">
@@ -67,19 +68,31 @@ const Navbar = () => {
           <NavLink to="/" className="block" onClick={() => setIsOpen(false)}>
             Главный
           </NavLink>
-          <NavLink to="/about" className="block" onClick={() => setIsOpen(false)}>
+          <NavLink
+            to="/about"
+            className="block"
+            onClick={() => setIsOpen(false)}
+          >
             О Нас
           </NavLink>
-          <NavLink  to="/" className="block" onClick={() => setIsOpen(false)}>
+          <NavLink to="/" className="block" onClick={() => setIsOpen(false)}>
             Учителя
           </NavLink>
           <NavLink to="/" className="block" onClick={() => setIsOpen(false)}>
             Цена
           </NavLink>
-          <NavLink to="/galery" className="block" onClick={() => setIsOpen(false)}>
+          <NavLink
+            to="/galery"
+            className="block"
+            onClick={() => setIsOpen(false)}
+          >
             Галерея
           </NavLink>
-          <NavLink to="/offer" className="block" onClick={() => setIsOpen(false)}>
+          <NavLink
+            to="/offer"
+            className="block"
+            onClick={() => setIsOpen(false)}
+          >
             Публичная оферта
           </NavLink>
         </div>
@@ -88,4 +101,4 @@ const Navbar = () => {
   );
 };
 
-export default memo (Navbar);
+export default memo(Navbar);

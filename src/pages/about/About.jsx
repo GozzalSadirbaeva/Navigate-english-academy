@@ -2,7 +2,7 @@ import React, { memo } from "react";
 
 const About = () => {
   return (
-    <div>
+    <div className="md:px-8 px-4">
       <h2 className="font-extrabold text-[43px] leading-[51px] text-center pt-8 pb-[100px] text-xl sm:text-3xl md:text-4xl lg:text-5xl">
         О нас
       </h2>
@@ -50,7 +50,7 @@ const About = () => {
           <img
             src="/ava16.png"
             alt="NaviGate"
-            className="rounded-2xl w-full sm:w-[350px] md:w-[400px]"
+            className="rounded-2xl "
           />
         </div>
       </div>

@@ -124,4 +124,4 @@ const Students = () => {
   );
 };
 
-export default memo (Students);
+export default memo(Students);

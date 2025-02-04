@@ -1,6 +1,12 @@
 import React, { memo } from "react";
 
 const Teachers = () => {
+  const teachers = [
+    { name: "Mr. Ne'mat", image: "/ava4.png", ielts: "7.5" },
+    { name: "Mr. Abror", image: "/ava5.png", ielts: "8.0" },
+    { name: "Mr. Shokhrukh", image: "/ava6.png", ielts: "8.0" },
+    { name: "Mr. Aziz", image: "/ava7.png", ielts: "7.5" },
+  ];
   return (
     <div id="teachers">
       <section className="pb-[65px] md:px-8 px-4">
@@ -13,67 +19,28 @@ const Teachers = () => {
         </h3>
         <div className="grid md:grid-cols-3 grid-cols-1 gap-5 px-5 md:px-0">
           <div className="flex flex-col gap-5 md:gap-[5px] w-full md:w-[315px] mx-auto md:mx-0">
-            <div className="flex gap-[14px] p-4 bg-[#F8F9FA] rounded-[20px]">
-              <img
-                src="/ava4.png"
-                alt=""
-                className="w-[50px] h-[50px] md:w-auto md:h-auto"
-              />
-              <div>
-                <p className="font-semibold text-lg md:text-[26px] leading-[31px]">
-                  Mr. Ne'mat
-                </p>
-                <p className="font-normal text-base md:text-xl leading-6 text-[#5D5D5D] pt-[10px]">
-                  IELTS: 7.5
-                </p>
+            {teachers.map((teacher, index) => (
+              <div
+                key={index}
+                className="flex gap-[14px] p-4 bg-[#F8F9FA] rounded-[20px]"
+              >
+                <img
+                  src={teacher.image}
+                  alt=""
+                  className="w-[50px] h-[50px] md:w-auto md:h-auto"
+                />
+                <div>
+                  <p className="font-semibold text-lg md:text-[26px] leading-[31px]">
+                    {teacher.name}
+                  </p>
+                  <p className="font-normal text-base md:text-xl leading-6 text-[#5D5D5D] pt-[10px]">
+                    IELTS: {teacher.ielts}
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="flex gap-[14px] p-4 bg-[#F8F9FA] rounded-[20px]">
-              <img
-                src="/ava5.png"
-                alt=""
-                className="w-[50px] h-[50px] md:w-auto md:h-auto"
-              />
-              <div>
-                <p className="font-semibold text-lg md:text-[26px] leading-[31px]">
-                  Mr. Abror
-                </p>
-                <p className="font-normal text-base md:text-xl leading-6 text-[#5D5D5D] pt-[10px]">
-                  IELTS: 8.0
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-[14px] p-4 bg-[#F8F9FA] rounded-[20px]">
-              <img
-                src="/ava6.png"
-                alt=""
-                className="w-[50px] h-[50px] md:w-auto md:h-auto"
-              />
-              <div>
-                <p className="font-semibold text-lg md:text-[26px] leading-[31px]">
-                  Mr. Shokhrukh
-                </p>
-                <p className="font-normal text-base md:text-xl leading-6 text-[#5D5D5D] pt-[10px]">
-                  IELTS: 8.0
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-[14px] p-4 bg-[#F8F9FA] rounded-[20px]">
-              <img
-                src="/ava7.png"
-                alt=""
-                className="w-[50px] h-[50px] md:w-auto md:h-auto"
-              />
-              <div>
-                <p className="font-semibold text-lg md:text-[26px] leading-[31px]">
-                  Mr. Aziz
-                </p>
-                <p className="font-normal text-base md:text-xl leading-6 text-[#5D5D5D] pt-[10px]">
-                  IELTS: 7.5
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
+
           <div className="flex justify-center">
             <img src="/ava8.png" alt="" className="" />
           </div>
@@ -296,4 +263,4 @@ const Teachers = () => {
   );
 };
 
-export default memo (Teachers);
+export default memo(Teachers);

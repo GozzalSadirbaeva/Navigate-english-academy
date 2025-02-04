@@ -2,7 +2,7 @@ import React, { memo } from "react";
 
 const Offer = () => {
   return (
-    <div>
+    <div className="md:px-8 px-4">
       <div>
         <h2 className="font-extrabold text-[49px] leading-[59px] text-center py-[65px]">
           Публичная оферта
