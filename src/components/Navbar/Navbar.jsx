@@ -8,22 +8,19 @@ const Navbar = () => {
   return (
     <div className="bg-[#BE1942]">
       <div className="container px-4 md:px-8 flex justify-between items-center py-3">
-        {/* Logo */}
-        <div>
+        <NavLink to="/">
           <img src="/Logo-navigate.svg" alt="Logo" />
-        </div>
+        </NavLink>
 
-        {/* Navigation Menu (Desktop & Mobile) */}
         <div className="flex items-center gap-10">
-          {/* Desktop Navigation */}
           <div className="hidden md:flex text-white gap-10">
-            <NavLink to="/" className="nav-text">
+            <NavLink to="/" smooth={true} className="nav-text">
               Главный
             </NavLink>
             <NavLink to="/about" className="nav-text">
               О Нас
             </NavLink>
-            <NavLink to="/#teachers" className="nav-text">
+            <NavLink to="/#teachers" smooth={true} duration={3000} className="nav-text">
               Учителя
             </NavLink>
             <NavLink to="/" className="nav-text">

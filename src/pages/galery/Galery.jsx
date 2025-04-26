@@ -1,6 +1,9 @@
-import React, { memo } from "react";
+import React, { memo, useEffect } from "react";
 
 const Galery = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="md:px-8 px-4">
       <div className="pb-[90px]">

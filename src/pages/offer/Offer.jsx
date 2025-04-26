@@ -1,6 +1,9 @@
-import React, { memo } from "react";
+import React, { memo, useEffect } from "react";
 
 const Offer = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="md:px-8 px-4">
       <div>
@@ -310,7 +313,8 @@ const Offer = () => {
           <br />
           10. РЕКВЕЗИТЫ УЧЕБНОГО ЦЕНТРА. ЧП “Language Academy” (Лицензия по
           повышению квалификации сотрудников и
-          кадров KMO 0402. O’zbekiston Respublikasi, Toshkent sh. Vazirlar Mahkamasi huzuridagi ta’lim sifatini nazorat qilish davlat inspeksiyasi).
+          кадров KMO 0402. O’zbekiston Respublikasi, Toshkent sh. <br />
+           Vazirlar Mahkamasi huzuridagi ta’lim sifatini nazorat qilish davlat inspeksiyasi).
           Юридический адрес: 100047, г. Ташкент, Мирзо-Улугбекский р-н, ул.
           Массив Карасу-3, 5-16. Р/С: 20208000100892744001; В ХАТБ “Давр Банк”;
           МФО:01072; ИНН: 305610162; ОКОНХ: 85600; <br />

@@ -1,9 +1,12 @@
-import React, { memo } from "react";
+import React, { memo, useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="md:px-8 px-4">
-      <h2 className="font-extrabold text-[43px] leading-[51px] text-center pt-8 pb-[100px] text-xl sm:text-3xl md:text-4xl lg:text-5xl">
+      <h2 className="font-extrabold text-[43px] leading-[51px] text-center pt-8 pb-[100px] sm:text-3xl md:text-4xl lg:text-5xl">
         О нас
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[30px] md:gap-[97px] pb-[126px]">

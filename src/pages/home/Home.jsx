@@ -1,9 +1,13 @@
-import React, { memo, useRef, useState } from "react";
+import React, { memo, useEffect, useRef, useState } from "react";
 import { CiCirclePlus } from "react-icons/ci";
+import Contact from "../../components/LandingPage/Contact";
 import Price from "../../components/LandingPage/Price";
 import Students from "../../components/LandingPage/Students";
 import Teachers from "../../components/LandingPage/Teachers";
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const teachersRef = useRef(null);
   const priceRef = useRef(null);
   const handleScroll = (ref) => {
@@ -164,8 +168,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Price />
       <Teachers />
+      <Price />
       <Students />
 
       <section className="bg-[#BE1942]">
@@ -203,40 +207,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
-        <h2 className="font-extrabold text-2xl md:text-[49px] leading-[29px] md:leading-[59px] pt-10 md:pt-[64px] pb-5 md:pb-[21px] text-center">
-          Контакты
-        </h2>
-        <div className="bg-[#2D2D2D] px-4 md:px-[100px] py-8 md:pt-[109px] md:pb-[46px]">
-          <img src="/map.png" alt="Map" className="w-full" />
-          <div className="text-white flex flex-col md:flex-row justify-between pt-10 md:pt-[81px] gap-8 md:gap-0">
-            <div>
-              <h3 className="font-bold text-xl md:text-[49px] leading-[29px] md:leading-[59px]">
-                Адрес:
-              </h3>
-              <p className="font-bold text-sm md:text-base leading-5 pt-2 md:pt-[10px]">
-                Мирзо-Улугбекский район, улица Буюк <br /> ипак йули, 111.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-bold text-xl md:text-[49px] leading-[29px] md:leading-[59px]">
-                E-mail:
-              </h3>
-              <p className="font-bold text-sm md:text-base leading-5 pt-2 md:pt-[10px]">
-                navigate.english.academy@gmail.com
-              </p>
-            </div>
-            <div>
-              <h3 className="font-bold text-xl md:text-[49px] leading-[29px] md:leading-[59px]">
-                Номер телефона:
-              </h3>
-              <p className="font-bold text-sm md:text-base leading-5 pt-2 md:pt-[10px]">
-                +998 99 484 22 24
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Contact />
       <section className="pb-10 md:pb-[150px]">
         <h2 className="font-extrabold text-2xl md:text-[49px] leading-[29px] md:leading-[59px] text-center pb-5 pt-10 md:pt-[115px]">
           FAQ
@@ -277,4 +248,4 @@ const Home = () => {
   );
 };
 
-export default memo (Home);
+export default memo(Home);
